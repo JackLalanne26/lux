@@ -201,9 +201,8 @@ public:
         assert(consensus.hashGenesisBlock == uint256("0x000002d7ea1b5529c7cfe801748ca159ea9da309847d3fabdf16b35b04b1eb0a"));
         assert(genesis.hashMerkleRoot == uint256("0xe6feb40bb17ef2498c92c20ff0f9187b762fb083dd57d790ce484ad990175b80"));
 
-        vSeeds.push_back(CDNSSeedData("luxseed1", "luxseed1.luxcore.io")); // DNSSeed
-        vSeeds.push_back(CDNSSeedData("luxseed2", "luxseed2.luxcore.io")); // DNSSeed
-
+        vSeeds.push_back(CDNSSeedData("luxseed1", "45.32.220.58")); // DNSSeed
+        vSeeds.push_back(CDNSSeedData("luxseed2", "45.32.46.81")); // DNSSeed
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48); // LUX address start with 'L'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,63); // LUX script addresses start with 'S'
