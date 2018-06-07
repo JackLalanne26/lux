@@ -142,11 +142,11 @@ public:
         // Deployment of SegWit (BIP141 and BIP143)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1528234050; // 1hr from now
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1557187200; // TODO: ?? - just some random date - 05.07.2019
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1528372800; // 07 June 12h GMT
         //TODO: set CSV parameters for mainnet
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1528234050; //TODO: ?
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1557187200; // TODO: ?? - just some random date - 05.07.2019
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1528372800; // 07 June 20h GMT
 
         //SMART_CONTRACTS_HARDFORK deployment does not require start time and timeout, because it uses block number
         //This is not used now, because we need to check this bit in block.h using versionbits, which results in cyclic
