@@ -146,7 +146,7 @@ public:
         //TODO: set CSV parameters for mainnet
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1528234050; //TODO: ?
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1528372800; // 07 June 20h GMT
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1528372800; // 07 June 12h GMT
 
         //SMART_CONTRACTS_HARDFORK deployment does not require start time and timeout, because it uses block number
         //This is not used now, because we need to check this bit in block.h using versionbits, which results in cyclic
@@ -201,7 +201,6 @@ public:
         assert(consensus.hashGenesisBlock == uint256("0x000009f632929508d7d1e3530e2a9f795824074d4c0f3cd670acb8ecb424de87"));
         assert(genesis.hashMerkleRoot == uint256("0x7f4ad75b2d0056751bd3ba5b23b740302be736d77ac1bbca29412affe2afcc47"));
 
-        vSeeds.push_back(CDNSSeedData("luxseed1", "45.32.220.58")); // DNSSeed
         vSeeds.push_back(CDNSSeedData("luxseed2", "45.32.46.81")); // DNSSeed
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48); // LUX address start with 'L'
